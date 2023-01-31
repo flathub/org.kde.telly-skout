@@ -16,7 +16,7 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://download.kde.org/stable/plasma-mobile/23.0.1/telly-skout-23.0.1.tar.xz
+        url: https://download.kde.org/stable/plasma-mobile/23.01.0/telly-skout-23.01.0.tar.xz
         sha256: 539f66ca41f5b75bd133802d642bcb3c447820bf7485b688b2b2531e145b8af1
         x-checker-data:
           type: anitya

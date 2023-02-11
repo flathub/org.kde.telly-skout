@@ -1,6 +1,6 @@
 app-id: org.kde.telly-skout
 runtime: org.kde.Platform
-runtime-version: 5.15-21.08
+runtime-version: 5.15-22.08
 sdk: org.kde.Sdk
 command: telly-skout
 rename-icon: telly-skout
@@ -20,6 +20,6 @@ modules:
         sha256: 539f66ca41f5b75bd133802d642bcb3c447820bf7485b688b2b2531e145b8af1
         x-checker-data:
           type: anitya
-          project-id: 242953
+          project-id: 326640
           stable-only: true
           url-template: https://download.kde.org/stable/plasma-mobile/$version/telly-skout-$version.tar.xz

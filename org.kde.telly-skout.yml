@@ -16,10 +16,10 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://download.kde.org/stable/plasma-mobile/23.01.0/telly-skout-23.01.0.tar.xz
-        sha256: 539f66ca41f5b75bd133802d642bcb3c447820bf7485b688b2b2531e145b8af1
+        url: https://download.kde.org/stable/release-service/23.04.0/src/telly-skout-23.04.0.tar.xz
+        sha256: 8241e862dacc6515db533329d16e50807f8cf0c778bc2394a6bf7c6dbaae1a91
         x-checker-data:
           type: anitya
           project-id: 326640
           stable-only: true
-          url-template: https://download.kde.org/stable/plasma-mobile/$version/telly-skout-$version.tar.xz
+          url-template: https://download.kde.org/stable/release-service/$version/src/telly-skout-$version.tar.xz

@@ -15,8 +15,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://download.kde.org/stable/release-service/23.04.0/src/telly-skout-23.04.0.tar.xz
-        sha256: 8241e862dacc6515db533329d16e50807f8cf0c778bc2394a6bf7c6dbaae1a91
+        url: https://download.kde.org/stable/release-service/23.04.1/src/telly-skout-23.04.1.tar.xz
+        sha256: 382b365503af8c012c261c40e90bc6ba8c592e3baf3b493e645034de705f6818
         x-checker-data:
           type: anitya
           project-id: 326640

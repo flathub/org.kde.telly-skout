@@ -11,9 +11,13 @@ finish-args:
   - --socket=fallback-x11
   - --device=dri
 modules:
-  - name: telly-skout
-    buildsystem: cmake-ninja
+  - name: "kirigami-addons"
+    config-opts:
+      - "-DBUILD_TESTING=OFF"
+    buildsystem: "cmake-ninja"
     sources:
+      - type: "git"
+        url: "https://invent.kde.org/libraries/kirigami-addons.git"
       - type: "archive"
         url: "https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.0.1.tar.xz"
         sha256: "9d013847efb0048c6a2799ee0ed281b14eee15314ac20d7fba853197e45f29b7"
@@ -22,6 +26,11 @@ modules:
           project-id: 242933
           stable-only: true
           url-template: "https://download.kde.org/stable/kirigami-addons/kirigami-addons-$version.tar.xz"
+  - name: telly-skout
+    buildsystem: cmake-ninja
+    config-opts:
+      - "-DBUILD_WITH_QT6=ON"
+    sources:
       - type: archive
         url: https://download.kde.org/stable/release-service/24.02.0/src/telly-skout-24.02.0.tar.xz
         sha256: bb4cb492e7be81a590e13179a3927b3c57d6eec8ec341921eadc82ada0c88bb3

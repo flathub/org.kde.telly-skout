@@ -14,7 +14,7 @@ modules:
   - name: kirigami-addons
     config-opts:
       - "-DBUILD_TESTING=OFF"
-    buildsystem: "cmake-ninja"
+    buildsystem: cmake-ninja
     sources:
       - type: archive
         url: https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.0.1.tar.xz

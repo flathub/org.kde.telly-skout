@@ -11,7 +11,7 @@ finish-args:
   - --socket=fallback-x11
   - --device=dri
 modules:
-  - name: "kirigami-addons"
+  - name: kirigami-addons
     config-opts:
       - "-DBUILD_TESTING=OFF"
     buildsystem: "cmake-ninja"

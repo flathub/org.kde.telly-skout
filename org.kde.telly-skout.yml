@@ -37,3 +37,10 @@ modules:
           project-id: 326640
           stable-only: true
           url-template: https://download.kde.org/stable/release-service/$version/src/telly-skout-$version.tar.xz
+    cleanup:
+      - '/include'
+      - '/lib/cmake'
+      - '/lib/libexec'
+      - '/mkspecs'
+      - '/etc/xdg/*categories'
+      - '/share/qlogging-categories5'

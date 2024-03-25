@@ -58,6 +58,19 @@ diff -urN a/.kde-ci.yml b/.kde-ci.yml
        - Android/Qt6
        - FreeBSD/Qt6
        - Linux/Qt6
+diff -urN a/src/networkdataprovider.cpp b/src/networkdataprovider.cpp
+--- a/src/networkdataprovider.cpp	2024-03-19 10:39:31.000000000 +0100
++++ b/src/networkdataprovider.cpp	2024-03-25 10:57:44.448544282 +0100
+@@ -24,6 +24,9 @@
+ {
+     QNetworkRequest request(url);
+     request.setRawHeader("User-Agent", "telly-skout/0.1");
++    // force HTTP/1.1, otherwise fetching many programs in parallel fails ("Server refused a stream")
++    // probably caused by https://bugreports.qt.io/browse/QTBUG-73947
++    request.setAttribute(QNetworkRequest::Http2AllowedAttribute, false);
+     QNetworkReply *reply = m_manager->get(request);
+     connect(reply, &QNetworkReply::finished, this, [reply, callback, errorCallback]() {
+         if (reply->error() == QNetworkReply::NoError) {
 diff -urN a/src/qml/ChannelListDelegate.qml b/src/qml/ChannelListDelegate.qml
 --- a/src/qml/ChannelListDelegate.qml	2024-03-19 10:39:31.000000000 +0100
 +++ b/src/qml/ChannelListDelegate.qml	2024-03-18 05:20:45.000000000 +0100

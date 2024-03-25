@@ -14,7 +14,7 @@ modules:
   - name: kirigami-addons
     buildsystem: cmake-ninja
     config-opts:
-      - "-DBUILD_TESTING=OFF"
+      - -DBUILD_TESTING=OFF
     sources:
       - type: archive
         url: https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.0.1.tar.xz
@@ -28,8 +28,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://download.kde.org/stable/release-service/24.02.0/src/telly-skout-24.02.0.tar.xz
-        sha256: bb4cb492e7be81a590e13179a3927b3c57d6eec8ec341921eadc82ada0c88bb3
+        url: https://download.kde.org/stable/release-service/24.02.1/src/telly-skout-24.02.1.tar.xz
+        sha256: 58ab40b548234fa3ee7b7687f0229272cb1e6886b4213fc737f0b88b2fe7f4d8
         x-checker-data:
           type: anitya
           project-id: 326640
@@ -38,9 +38,9 @@ modules:
       - type: patch
         path: qt6.patch
     cleanup:
-      - '/include'
-      - '/lib/cmake'
-      - '/lib/libexec'
-      - '/mkspecs'
-      - '/etc/xdg/*categories'
-      - '/share/qlogging-categories5'
+      - /include
+      - /lib/cmake
+      - /lib/libexec
+      - /mkspecs
+      - /etc/xdg/*categories
+      - /share/qlogging-categories5

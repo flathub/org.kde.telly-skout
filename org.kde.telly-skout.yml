@@ -24,8 +24,8 @@ modules:
       - -DBUILD_TESTING=OFF
     sources:
       - type: archive
-        url: https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.5.0.tar.xz
-        sha256: f9dfd191022b633ea3348f84730d7158a159dfe49668dba0a9e9bd678ac44e54
+        url: https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.6.0.tar.xz
+        sha256: 376dae6fc5acac7d0905ce9fef3211be0705c6e2df52bb80dfde1eaa20fe1bfa
         x-checker-data:
           type: anitya
           project-id: 242933
@@ -35,8 +35,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://download.kde.org/stable/release-service/24.08.3/src/telly-skout-24.08.3.tar.xz
-        sha256: a0ab73df898b73ddff188ab7c9f86032c9f3a42b09f4c118c17ac28bb25e622a
+        url: https://download.kde.org/stable/release-service/24.12.0/src/telly-skout-24.12.0.tar.xz
+        sha256: 659716f28795b320b832be43e34722183760dd0aa4305673afc065f85fda9560
         x-checker-data:
           type: anitya
           project-id: 326640

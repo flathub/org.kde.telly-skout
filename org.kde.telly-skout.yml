@@ -35,10 +35,12 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://download.kde.org/stable/release-service/24.12.1/src/telly-skout-24.12.1.tar.xz
-        sha256: e6ebee4e0cc2d85cbae0beafdbb33d828f9585a1d4cdbdad1a3a927542291861
+        url: https://download.kde.org/stable/release-service/24.12.2/src/telly-skout-24.12.2.tar.xz
+        sha256: f84412cbc3f13af0199480462795a346976498ff42aed02ed5e6bf9484413f88
         x-checker-data:
           type: anitya
           project-id: 326640
           stable-only: true
           url-template: https://download.kde.org/stable/release-service/$version/src/telly-skout-$version.tar.xz
+      - type: patch
+        path: 0001-appdata-Fix-XML-syntax.patch
